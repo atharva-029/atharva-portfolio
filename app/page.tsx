@@ -8,6 +8,8 @@ const KISAN_MITRA_LIVE_URL =
 const KISAN_MITRA_GITHUB_URL =
   "https://github.com/atharva-029/kisan-mitra";
 
+const INSTAGRAM_URL = "https://www.instagram.com/atharvasharma029/";
+
 const skillIcons: Record<string, string> = {
   C: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
 
@@ -129,7 +131,7 @@ function SkillBox({
   skills: string[];
 }) {
   return (
-    <div className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6">
+    <div className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-5 sm:p-6">
       <h3 className="mb-5 text-[13px] font-medium uppercase tracking-[0.12em] text-white/35">
         {title}
       </h3>
@@ -177,7 +179,7 @@ export default function Home() {
       ========================================================= */}
 
       <nav className="sticky top-0 z-50 border-b border-white/[0.08] bg-[#080808]/90 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1210px] items-center justify-between px-6 py-5">
+        <div className="mx-auto flex max-w-[1210px] items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5">
 
           <a
             href="#home"
@@ -186,7 +188,7 @@ export default function Home() {
             Atharva.
           </a>
 
-          <div className="hidden items-center gap-8 text-[14px] text-white/55 md:flex">
+          <div className="hidden items-center gap-8 text-[14px] text-white/55 lg:flex">
             <a
               href="#about"
               className="transition hover:text-white"
@@ -223,14 +225,14 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
 
             {/* RESUME */}
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-white/[0.12] px-5 py-2 text-[13px] transition hover:border-white/25 hover:bg-white/[0.04]"
+              className="rounded-full border border-white/[0.12] px-3.5 py-2 text-[12px] transition hover:border-white/25 hover:bg-white/[0.04] sm:px-5 sm:text-[13px]"
             >
               Resume
             </a>
@@ -238,7 +240,7 @@ export default function Home() {
             {/* LET'S TALK */}
             <a
               href="mailto:atharvasharma129@gmail.com"
-              className="rounded-full border border-white/[0.12] px-5 py-2 text-[13px] transition hover:border-white/25 hover:bg-white/[0.04]"
+              className="rounded-full border border-white/[0.12] px-3.5 py-2 text-[12px] transition hover:border-white/25 hover:bg-white/[0.04] sm:px-5 sm:text-[13px]"
             >
               Let&apos;s Talk
             </a>
@@ -253,7 +255,7 @@ export default function Home() {
 
       <section
         id="home"
-        className="relative mx-auto flex min-h-[90vh] max-w-[1210px] items-center overflow-hidden px-6"
+        className="relative mx-auto flex min-h-[82vh] max-w-[1210px] items-center overflow-hidden px-4 py-16 sm:min-h-[90vh] sm:px-6 sm:py-0"
       >
 
         {/* Subtle background glow */}
@@ -277,7 +279,7 @@ export default function Home() {
           </div>
 
           {/* Main heading */}
-          <h1 className="text-[56px] font-semibold leading-[1.02] tracking-[-0.05em] sm:text-[76px] md:text-[92px]">
+          <h1 className="text-[48px] font-semibold leading-[1.02] tracking-[-0.05em] sm:text-[76px] md:text-[92px]">
             Hi, I&apos;m
             <br />
             <span className="text-white">
@@ -286,7 +288,7 @@ export default function Home() {
           </h1>
 
           {/* Intro */}
-          <p className="mt-8 max-w-[650px] text-[15px] leading-7 text-white/45 sm:text-[17px]">
+          <p className="mt-7 max-w-[650px] text-[14px] leading-7 text-white/45 sm:mt-8 sm:text-[17px]">
             I&apos;m a Computer Science student at SRM University-AP,
             interested in technology, building things, events and creative
             ideas.
@@ -326,7 +328,7 @@ export default function Home() {
 
       <section
         id="about"
-        className="mx-auto max-w-[1210px] scroll-mt-24 px-6 py-32"
+        className="mx-auto max-w-[1210px] scroll-mt-24 px-4 py-20 sm:px-6 sm:py-32"
       >
 
         <div className="grid gap-16 md:grid-cols-[0.8fr_1.2fr]">
@@ -372,7 +374,7 @@ export default function Home() {
 
       <section
         id="projects"
-        className="mx-auto max-w-[1210px] scroll-mt-24 px-6 py-32"
+        className="mx-auto max-w-[1210px] scroll-mt-24 px-4 py-20 sm:px-6 sm:py-32"
       >
 
         <div className="mb-12">
@@ -493,25 +495,6 @@ export default function Home() {
 
           </div>
 
-          {/* =====================================================
-              PROJECT 02
-          ===================================================== */}
-
-          <div className="rounded-2xl border border-white/[0.1] bg-white/[0.02] p-7 transition-all duration-300 hover:border-white/[0.16] hover:bg-white/[0.035]">
-
-            <p className="mb-8 text-[11px] uppercase tracking-[0.15em] text-white/25">
-              Coming Soon
-            </p>
-
-            <h3 className="text-[19px] font-medium">
-              Project 02
-            </h3>
-
-            <p className="mt-3 text-[14px] leading-6 text-white/40">
-              More experiments, ideas and builds will appear here.
-            </p>
-
-          </div>
 
         </div>
       </section>
@@ -522,7 +505,7 @@ export default function Home() {
 
       <section
         id="skills"
-        className="mx-auto max-w-[1210px] scroll-mt-24 px-6 py-32"
+        className="mx-auto max-w-[1210px] scroll-mt-24 px-4 py-20 sm:px-6 sm:py-32"
       >
 
         <div className="mb-12">
@@ -610,7 +593,7 @@ export default function Home() {
 
       <section
         id="journey"
-        className="mx-auto max-w-[1210px] scroll-mt-24 px-6 py-32"
+        className="mx-auto max-w-[1210px] scroll-mt-24 px-4 py-20 sm:px-6 sm:py-32"
       >
 
         <div className="mb-16">
@@ -698,7 +681,7 @@ export default function Home() {
 
         <div className="border-t border-white/[0.1]" />
 
-        <div className="relative min-h-[390px] pt-20">
+        <div className="relative min-h-[430px] pt-16 sm:min-h-[390px] sm:pt-20">
 
           <div>
 
@@ -720,7 +703,7 @@ export default function Home() {
               SOCIAL ICONS
           ===================================================== */}
 
-          <div className="absolute right-0 top-[165px] flex items-center gap-3">
+          <div className="mt-10 flex items-center gap-3 sm:absolute sm:right-0 sm:top-[165px] sm:mt-0">
 
             {/* LINKEDIN */}
             <a
@@ -764,6 +747,28 @@ export default function Home() {
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.963 6.817H1.683l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
               </svg>
 
+            </a>
+
+            {/* INSTAGRAM */}
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
+              className="group relative flex h-12 w-12 items-center justify-center rounded-full border border-white/[0.12] bg-white/[0.02] transition-all duration-300 hover:border-pink-400/70 hover:bg-pink-400/[0.05] hover:shadow-[0_0_12px_rgba(236,72,153,0.35),inset_0_0_12px_rgba(236,72,153,0.08)]"
+            >
+              <span className="pointer-events-none absolute inset-0 rounded-full opacity-0 blur-[3px] transition-opacity duration-300 group-hover:opacity-100 group-hover:shadow-[0_0_18px_2px_rgba(236,72,153,0.3)]" />
+
+              <svg
+                viewBox="0 0 24 24"
+                className="relative h-5 w-5 transition-transform duration-300 group-hover:scale-110"
+                fill="none"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="#E1306C" strokeWidth="2" />
+                <circle cx="12" cy="12" r="4" stroke="#E1306C" strokeWidth="2" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="#E1306C" />
+              </svg>
             </a>
 
             {/* EMAIL */}
@@ -827,7 +832,7 @@ export default function Home() {
 
       <footer className="border-t border-white/[0.1]">
 
-        <div className="mx-auto flex max-w-[1210px] items-center justify-between px-6 py-10 text-[12px] text-white/30">
+        <div className="mx-auto flex max-w-[1210px] flex-col items-center justify-between gap-3 px-4 py-8 text-center text-[12px] text-white/30 sm:flex-row sm:px-6 sm:py-10 sm:text-left">
 
           <p>
             © 2026 Atharva Sharma
