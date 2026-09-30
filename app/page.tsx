@@ -661,9 +661,27 @@ export default function Home() {
               Microsoft Student Community
             </h3>
 
-            <p className="mt-2 text-[14px] text-white/40">
-              Events Coordinator
-            </p>
+            <div className="mt-4 space-y-4 border-l border-white/[0.08] pl-4">
+
+              <div>
+                <p className="text-[14px] font-medium text-white/75">
+                  Social Media Head
+                </p>
+                <p className="mt-1 text-[12px] text-white/35">
+                  September 2026 — Present
+                </p>
+              </div>
+
+              <div>
+                <p className="text-[14px] font-medium text-white/75">
+                  Events Coordinator
+                </p>
+                <p className="mt-1 text-[12px] text-white/35">
+                  August 2026 — Present
+                </p>
+              </div>
+
+            </div>
 
           </div>
 
