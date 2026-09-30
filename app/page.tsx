@@ -707,7 +707,7 @@ export default function Home() {
 
             {/* LINKEDIN */}
             <a
-              href="https://www.linkedin.com/in/atharva-sharma-08a413429"
+              href="https://www.linkedin.com/in/atharva-sharma029"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
